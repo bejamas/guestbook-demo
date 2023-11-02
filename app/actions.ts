@@ -17,7 +17,7 @@ export async function saveGuestbookEntry(formData: FormData) {
 	const entry = formData.get('entry')?.toString() || ''
 	const body = entry.slice(0, 500)
 
-	await sql`INSERT INTO "Guestbook" (email, created_by, body) VALUES (${email}, ${created_by}, ${body});`
+	await sql`INSERT INTO "Guestbook" (email, created_by, body, last_modified) VALUES (${email}, ${created_by}, ${body}, ${new Date().toISOString()});`
 
 	revalidatePath('/')
 }
