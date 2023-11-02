@@ -10,6 +10,7 @@ import GitHub from 'next-auth/providers/github'
 // You'll need to import and pass this
 // to `NextAuth` in `app/api/auth/[...nextauth]/route.ts`
 export const authOptions = {
+	secret: process.env.AUTH_SECRET,
 	providers: [
 		GitHub({
 			clientId: process.env.GITHUB_CLIENT_KEY as string,

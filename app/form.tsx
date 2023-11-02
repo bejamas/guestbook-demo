@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
-// import { saveGuestbookEntry } from './actions'
+import { saveGuestbookEntry } from './actions'
 import { useFormStatus } from 'react-dom'
 
 export default function Form() {
@@ -14,7 +14,7 @@ export default function Form() {
 			className='relative max-w-[500px]'
 			ref={formRef}
 			action={async (formData) => {
-				// await saveGuestbookEntry(formData)
+				await saveGuestbookEntry(formData)
 				formRef.current?.reset()
 			}}>
 			<input
