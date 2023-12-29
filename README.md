@@ -3,7 +3,7 @@
 ✨ The final code for clone of Lee robinson's project, guestbook created using Vercel stack
 
 - 📺 [Live Demo](https://guestbook-giridhar7632.vercel.app/)
-- 📝 [Link to Article]()
+- 📝 [Link to Article](https://bejamas.io/blog/how-to-create-a-guestbook/)
 
 ## Development Environment Setup 🚀
 
